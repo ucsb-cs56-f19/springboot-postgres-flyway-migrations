@@ -12,9 +12,9 @@ The search engine is intended to be used as part of an NSF sponsored project tha
 
 NOTE: Include *.yml in your .gitignore so you don't publicly share your Github developer secret keys
 
-#Tutorial Used for Github SSO: https://www.youtube.com/watch?v=D2FuRIL95kk
+# Tutorial Used for Github SSO: https://www.youtube.com/watch?v=D2FuRIL95kk
 
-#Dependencies:
+# Dependencies:
 
 * Spring Security (Not necessary for initial SSO but will be for securing URLs in the future)
 * Cloud Oauth2
