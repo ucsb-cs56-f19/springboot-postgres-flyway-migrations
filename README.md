@@ -11,3 +11,12 @@ The idea is to provide a front end to a web search engine (likely Google) that:
 The search engine is intended to be used as part of an NSF sponsored project that seeks to understand how to help students develop better skills to be prepared for real world software development careers.   More information on the NSF grant is here: <https://brownfield-team.github.io>
 
 NOTE: Include *.yml in your .gitignore so you don't publicly share your Github developer secret keys
+
+#Tutorial Used for Github SSO: https://www.youtube.com/watch?v=D2FuRIL95kk
+
+#Dependencies:
+
+* Spring Security (Not necessary for initial SSO but will be for securing URLs in the future)
+* Cloud Oauth2
+* Cloud Security
+* Spring Web Starter
