@@ -1,18 +1,15 @@
-# mapache-search-engine
+# Springboot Tutorial
 
-The Mapache Search Engine is a project of students enrolled in the course [CMPSC 56](https://ucsb-cs56.github.io) at UC Santa Barbara.
+# NOTE: 
+Include *.yml in your .gitignore so you don't publicly share your Github developer secret keys
 
-The idea is to provide a front end to a web search engine (likely Google) that:
-* tailors its results towards ones helpful to students working on software development projects for CMPSC 56, which is a Java-based application development course.  
-* allows users to upvote and downvote search results based on usefulness to particular queries
-* allows users to enter notes about search results (e.g. "this link helped me to solve such and such a problem")
-* gives preference to results that have been upvoted by other students in the course.
-
-The search engine is intended to be used as part of an NSF sponsored project that seeks to understand how to help students develop better skills to be prepared for real world software development careers.   More information on the NSF grant is here: <https://brownfield-team.github.io>
-
-NOTE: Include *.yml in your .gitignore so you don't publicly share your Github developer secret keys
+# Use Visual Studio Code AND install some Spring Boot packages for VS. They are very useful!
 
 # Tutorial Used for Github SSO: https://www.youtube.com/watch?v=D2FuRIL95kk
+
+# Tutorial used for DB connection and REST calls: https://www.youtube.com/watch?v=vtPkZShrvXQ
+
+Both these tutorials are fairly new (at most a few months old)
 
 # Dependencies:
 
@@ -20,11 +17,18 @@ NOTE: Include *.yml in your .gitignore so you don't publicly share your Github d
 * Cloud Oauth2
 * Cloud Security
 * Spring Web Starter
+* Spring Security Web (disable csrf token to use POST requests in Postman)
 
 
 # Architecture and Design:
 
 For basics on how it works currently.
-* User Request (HTTP: GET, POST, DELETE, PUT,.. CRUD stuff) talks to:
+* User Request (HTTP: GET, POST, DELETE, PUT,.. CRUD stuff) is managed by PersonController which talks to:
 * Service Layer (PersonService.java) which uses qualifiers and autowiring to figure out which DB to use
 * DB layer which the service layer interacts with (can be local, mongoDB, etc. depending on which DB ur using)
+
+# Overview:
+
+* Dependency Injection
+* RESTful API calls
+* Many useful comments if you read through my files

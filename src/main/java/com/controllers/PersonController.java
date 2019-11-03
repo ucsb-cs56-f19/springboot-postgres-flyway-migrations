@@ -57,6 +57,11 @@ public class PersonController {
         .orElse(null); //exception, default to null for now (return nothing)
     }
 
+    //note that Delete and PutMapping isn't accessed through URL change.
+    //Similar to Get and POST methods, Delete and Put are their own respective methods.
+    //Therefore, you need to do a DELETE call or PUT call to access
+    //Websites usually restrict this open access however. This is open to your implementation
+    //Configure your SecurityConfig to reflect access
     @DeleteMapping(path = "{id}")
     public void deletePersonById(@PathVariable("id") UUID id) {
         personService.deletePersonById(id);

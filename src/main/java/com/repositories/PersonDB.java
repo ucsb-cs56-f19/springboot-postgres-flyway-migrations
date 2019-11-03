@@ -52,7 +52,7 @@ public class PersonDB implements PersonInterface {
             return 0;
         //DB.get(DB.indexOf(temp.get())).setEmail(person.getEmail());
         //DB.get(DB.indexOf(temp.get())).setName(person.getName());
-        DB.set(DB.indexOf(temp.get()), person);
+        DB.set(DB.indexOf(temp.get()), new Person(id, person.getName(), person.getEmail()));
         return 1;
     }
 
