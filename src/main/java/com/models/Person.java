@@ -2,10 +2,15 @@ package com.models;
 
 import java.util.UUID;
 
+import javax.validation.constraints.NotBlank;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Person{
     private final UUID id; // Final == can't be overidden by inheritance
+
+    @NotBlank //you can have a null string vs a non-null but blank string
+    //Check against name being blank, we want it to always be populated
     private String name;
     private String email;
 

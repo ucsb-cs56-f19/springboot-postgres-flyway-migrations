@@ -23,7 +23,7 @@ public class PersonService {
     //We wire it to PersonDB repository, but in the future, we can wire to mongo, etc.
     //TLDR: we can have multiple DB's, but qualifier allows us to select which one to use as our service
     @Autowired
-    public PersonService(@Qualifier("db_example") PersonInterface person_i) {
+    public PersonService(@Qualifier("postgres") PersonInterface person_i) {
         this.person_i = person_i;
     }
 
