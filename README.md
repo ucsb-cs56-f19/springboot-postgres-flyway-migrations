@@ -7,11 +7,11 @@ Include *.yml in your .gitignore so you don't publicly share your Github develop
 
 # Tutorial used for Postgres connection: https://www.youtube.com/watch?v=vtPkZShrvXQ
 
-# Target -> jar-name.JAR, you can deploy this on a server
+# Target -> jar-name.JAR, you can deploy application w/o spring-boot:run
 
 * On local, go to target in terminal
 * type in java -jar jar-name.JAR
-* Your server has been started via JAR and not spring-boot:run
+* Your application has been started via JAR and not spring-boot:run
 
 # Dependencies:
 
