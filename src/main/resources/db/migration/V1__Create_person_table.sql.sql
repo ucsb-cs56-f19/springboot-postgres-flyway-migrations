@@ -13,15 +13,15 @@ psql -U postgres --> logs you in with your credentials from application.yml
 
 \l shows your databases
 
-CREATE DATABASE databasename; //(can't have dashes) to create db
+CREATE DATABASE databasename; //(can't have dashes) to create db. Make this the same name as the jdbc-url ending name in .yml file 
 
 \c databasename connects you to demodb w/ user credentials from yml file
 
-\d --> lists all relations
+\d tablename --> lists all of the table's attributes
 
 \dt --> lists table relations
 
-After your start your application, you'll notice that you will have
+After your start your application, you'll notice that you will have a new db now
 */
 
 /*V1__Create_person_table.sql
