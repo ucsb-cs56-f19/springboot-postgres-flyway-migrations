@@ -51,4 +51,9 @@ public class PersonService {
     public int deletePersonById(UUID id) {
         return person_i.deletePersonById(id);
     }
+
+    public List<Person> getAllLocalPeople() {
+        return person_i.SelectAllLocalPeople();
+
+    }
 }

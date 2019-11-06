@@ -58,4 +58,9 @@ public class PersonController {
     public void updatePerson(@PathVariable("id") UUID id, @Valid @NonNull @RequestBody Person person) {
         personService.updatePerson(id, person);
     }
+
+    @GetMapping("local")
+    public List<Person> getAllLocalPeople() {
+        return personService.getAllLocalPeople();
+    }
 }

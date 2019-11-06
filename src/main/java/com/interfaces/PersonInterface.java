@@ -18,9 +18,12 @@ public interface PersonInterface {
     
     List<Person> SelectAllPeople();
 
+    List<Person> SelectAllLocalPeople();
+
     int updatePersonById(UUID id, Person person);
 
     int deletePersonById(UUID id); 
 
     Optional<Person> selectPersonById(UUID id);
+
 }
