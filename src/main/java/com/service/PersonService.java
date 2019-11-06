@@ -35,8 +35,8 @@ public class PersonService {
         return person_i.insertPerson(person);
     }
 
-    public List<Person> getAllPeople() {
-        return person_i.SelectAllPeople();
+    public List<Person> getDBPeople() {
+        return person_i.SelectDBPeople();
         //remember, this method is defined in our DB bean
     }
 
@@ -54,6 +54,9 @@ public class PersonService {
 
     public List<Person> getAllLocalPeople() {
         return person_i.SelectAllLocalPeople();
+    }
 
+    public List<Person> getCombinedPeople() {
+        return person_i.SelectAllPeople();
     }
 }

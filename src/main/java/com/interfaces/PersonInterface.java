@@ -16,9 +16,11 @@ public interface PersonInterface {
         return insertPerson(id, person);
     }
     
-    List<Person> SelectAllPeople();
+    List<Person> SelectDBPeople();
 
     List<Person> SelectAllLocalPeople();
+
+    List<Person> SelectAllPeople();
 
     int updatePersonById(UUID id, Person person);
 

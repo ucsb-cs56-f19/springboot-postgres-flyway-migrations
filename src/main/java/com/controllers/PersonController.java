@@ -39,8 +39,8 @@ public class PersonController {
     }
 
     @GetMapping
-    public List<Person> getAllPeople() {
-        return personService.getAllPeople();
+    public List<Person> getDBPeople() {
+        return personService.getDBPeople();
     }
 
     @GetMapping(path = "{id}")
@@ -62,5 +62,10 @@ public class PersonController {
     @GetMapping("local")
     public List<Person> getAllLocalPeople() {
         return personService.getAllLocalPeople();
+    }
+
+    @GetMapping("all")
+    public List<Person> GetCombinedPeople() {
+        return personService.getCombinedPeople();
     }
 }

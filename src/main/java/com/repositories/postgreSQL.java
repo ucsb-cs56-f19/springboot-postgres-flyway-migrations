@@ -42,7 +42,7 @@ public class postgreSQL implements PersonInterface {
     }
 
     @Override
-    public List<Person> SelectAllPeople() {
+    public List<Person> SelectDBPeople() {
         
         final String sql = "SELECT id, name, email FROM person";
         
@@ -59,6 +59,13 @@ public class postgreSQL implements PersonInterface {
     @Override
     public List<Person> SelectAllLocalPeople() {
         return DB;
+    }
+    
+    @Override
+    public List<Person> SelectAllPeople() {
+        List<Person> temp = SelectDBPeople();
+        temp.addAll(DB);
+        return temp;
     }
 
     @Override
